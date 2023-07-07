@@ -46,4 +46,4 @@ jobs:
         with:
           name: build
           path: 
-            dist/*
+            dist/GWSL_145*
