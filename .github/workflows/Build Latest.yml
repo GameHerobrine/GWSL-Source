@@ -41,3 +41,9 @@ jobs:
       - name: Building GWSL_service...
         run: |
           python build.py
+      - uses: actions/upload-artifact@v3
+      - name: Release
+        with:
+          name: build
+          path: 
+            dist/*
