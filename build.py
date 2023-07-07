@@ -13,7 +13,7 @@ PyInstaller.__main__.run([
     '-w',
     '-y',
     '-n=GWSL',
-    #'--hidden-import=pkg_resources.py2_warn'
+    '--hidden-import=pkg_resources.py2_warn'
 ])
 
 
@@ -26,7 +26,7 @@ PyInstaller.__main__.run([
     '-n=GWSL_service',
     '--hidden-import=pkg_resources',
     '--hidden-import=infi.systray',
-    #'--hidden-import=pkg_resources.py2_warn'
+    '--hidden-import=pkg_resources.py2_warn'
 ])
 
 
