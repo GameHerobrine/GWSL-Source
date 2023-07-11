@@ -41,9 +41,10 @@ jobs:
       - name: Building GWSL_service...
         run: |
           python build.py
+          tar -czvf build.tar.gz dist
       - name: Release
         uses: actions/upload-artifact@v3
         with:
           name: build
           path: 
-            dist/GWSL_145*
+            build.tar.gz
